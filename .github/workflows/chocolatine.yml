@@ -13,7 +13,7 @@ on:
 
 env:
   MIRROR_URL: git@github.com:TovyREN/dante.git
-  EXCUTABLES: generator/generator, solver/solver
+  EXCUTABLES: generator/generator solver/solver
 jobs:
   check_repository_cleanliness:
     runs-on: ubuntu-latest
