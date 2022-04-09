@@ -41,7 +41,7 @@ jobs:
       image: epitechcontent/epitest-docker:latest
     steps:
       - uses: actions/checkout@v3
-        run: make
+      - run: make
         timeout-minutes: 2
       - run: make clean
       - run: |
@@ -58,7 +58,7 @@ jobs:
       image: epitechcontent/epitest-docker:latest
     steps:
       - uses: actions/checkout@v3
-        run: make tests_run
+      - run: make tests_run
         timeout-minutes: 2
   push_to_mirror:
     needs: check_program_compilation
