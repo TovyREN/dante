@@ -56,7 +56,6 @@ jobs:
       - run: make tests_run
         timeout-minutes: 2
   push_to_mirror:
-    needs: check_program_compilation
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
